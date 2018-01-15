@@ -1,0 +1,35 @@
+This README describes provides a short description of the various files that
+compose our project.
+
+Files
+=====
+data
+├── test_clean_avg.csv      - Pre-processed test dataset (see ~/doc/#5_report.pdf for technical details).
+└── train_clean_avg.csv     - Pre-processed train dataset (see ~/doc/#5_report.pdf for technical details).
+doc
+├── AUTHORS                 - Project authors.
+├── README                  - This README file.
+└── #5_report.pdf           - Report.
+src/
+├── analysis_plot.py        - Loads results from training stored in .pickle files and shows plots.
+├── analysis.py             - Performs cross-validation and saves the itermediate results in .pickle files.
+├── clean_data.py           - Feature engineering methods for transforming the input features.
+├── cost.py                 - Implementation of cost functions.
+├── cross_validation.py     - Implementation of cross-validation.
+├── gradient_descent.py     - Implementation of GD and SGD
+├── gradient.py             - Implementation of gradients.
+├── helpers.py              - Helper functions.
+├── implementations.py      - ML methods with API required by ML class project 1.
+├── logistic.py             - Implementation of logistic function.
+├── normal_equations.py     - Implementation of normal equations for least squares and ridge regression.
+├── polynomial_expansion.py - Polynomail transformation of the input features.
+├── proj1_helpers.py        - Helper functions.
+└── run.py                  - Prediciton of the labels for test data.
+
+
+You can obtain our final classification results by running the run.py file. To
+avoid having to wait ~1h to get the results, we have commented out the gradient
+descent function and provide you with the resulting "w_star" model obtained.
+
+If you wish to verify the implementation, feel free to comment out the provided
+"w_star" model parameters and to uncomment the gradient descent function.
